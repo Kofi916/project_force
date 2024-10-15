@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill and Employment Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">SkillHub</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to SkillHub</h1>
+            <p>Empowering young minds through skill development and job opportunities.</p>
+            <a href="#jobs" class="cta-button">Find Jobs</a>
+        </section>
+
+        <section id="jobs" class="jobs">
+            <h2>Job Listings</h2>
+            <div class="job-list">
+                <div class="job-item">
+                    <h3>Job Title 1</h3>
+                    <p>Company Name</p>
+                    <button class="apply-button">Apply Now</button>
+                </div>
+                <div class="job-item">
+                    <h3>Job Title 2</h3>
+                    <p>Company Name</p>
+                    <button class="apply-button">Apply Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2>Available Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Course Title 1</h3>
+                    <p>Brief description of the course.</p>
+                    <button class="enroll-button">Enroll Now</button>
+                </div>
+                <div class="course-item">
+                    <h3>Course Title 2</h3>
+                    <p>Brief description of the course.</p>
+                    <button class="enroll-button">Enroll Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Registration Section -->
+        <section id="registration" class="registration">
+            <h2>User Registration</h2>
+            <form id="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="e.g., Programming, Carpentry" required>
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" placeholder="e.g., High School, BSc. Computer Science" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- User Profile Section -->
+        <section id="profile" class="profile">
+            <h2>User Profile</h2>
+            <div id="profile-info" class="profile-info">
+                <p>No user data available. Please register.</p>
+            </div>
+            <button id="edit-profile-button" style="display: none;">Edit Profile</button>
+            <button id="delete-profile-button" style="display:none;">Delete Profile</button>
+
+            <form id="profile-form" style="display: none;">
+                <label for="edit-skills">Skills:</label>
+                <input type="text" id="edit-skills" required>
+
+                <label for="edit-education">Education:</label>
+                <input type="text" id="edit-education" required>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SkillHub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
